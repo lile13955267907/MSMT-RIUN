@@ -1,0 +1,20 @@
+# Training configs for Seg
+
+dataset : Oil Dataset
+channels : 21
+n_classes : 2
+ignore_index : 255
+net : DeepLab
+optimizer : adam
+scheduler : StepLR
+lr : 0.001
+batchsize : 10
+start_epoch : 0
+end_epoch : 100
+result_dir : "C:/Users/ADMIN/Desktop/S1L8/result/Deeplab-adam/deeplab-adam-0.001"
+criterion : crossentropy
+logIterval : 10
+valIterval : 2
+resume :
+  flag : False
+  state_path : "./eventfiles-deeplab-channels7/DeepLab-ep114.pth"

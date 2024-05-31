@@ -1,0 +1,20 @@
+# Training configs for Seg
+
+dataset : S1+L8 Dataset
+channels : 56
+n_classes : 2
+ignore_index : 255
+net : fcns
+optimizer : adam
+scheduler : StepLR
+lr : 0.0001
+batchsize : 6
+start_epoch : 0
+end_epoch : 80
+result_dir : "C:/Users/ADMIN/Desktop/S1L8/result/l8fcn-adam/FCN-adam-0.001"
+criterion : weight_crossentropy
+logIterval : 10
+valIterval : 2
+resume : 
+  flag : False
+  state_path : "./eventfiles-fcns-channels7/fcns-ep126.pth"
